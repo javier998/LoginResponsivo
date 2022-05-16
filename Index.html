@@ -8,27 +8,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
+<body class="">
+    <!--Comienza el contenedor-->
     <div class="container-fluid">
-        <div class="container  borde align-middle " style="height: 80vh;">
+        <!--Comienza el contenedor para las columnas-->
+        <div class="container align-middle " style="height: 80vh;">
+            <!--Comienza el div con la fila para las 3 columnas-->
             <div class="row largo align-middle align-items-center ">
-                <div class="col-1 col-sm-2 col-md-3 col-lg-4">1</div>
-                <div class="col-10 col-sm-8 col-md-6 col-lg-4">
-                    <h1 class="title">Iniciar sesion</h1>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="basic-addon1">Password</span>
-                        <input type="password" class="form-control" placeholder="Contraseña" aria-label="Password" aria-describedby="basic-addon1">
-                    </div>                  
-                    <div class="input-group mb-3">
-                        <input type="button" class="form-control" value="Ingresar">
-                    </div>
+
+                <!--Columna posicion derecha-->
+                <!--Esta columna solo se utilizara para dar espacios-->
+                <div class="col-1 col-sm-2 col-md-3 col-lg-4"></div>
+
+                <!--Columna posicion central, esta columna se utilzara para el formulario-->
+                <div class="rounded border-primary bg-light col-10 col-sm-8 col-md-6 col-lg-4">
+                    <h1 class="title text-primary text-center p-3">Iniciar Sesión</h1>
+                    <form action="get">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">
+                                <ion-icon name="key-outline"></ion-icon>
+                            </span>
+                            <input type="password" class="form-control" placeholder="Contraseña" aria-label="Password" aria-describedby="basic-addon1">
+                        </div>                  
+                        <div class="input-group mb-3">
+                            <input type="button" class="form-control" value="Ingresar">
+                        </div><div class="text-center input-group mb-3">
+                            <a  class="" href="">¿Olvidastes tu Usuario?</a>
+                        </div>
+                        <div class="text-center input-group mb-3">
+                            <a  class="" href="">¿Olvidastes tu contraseña?</a>
+                        </div>
+                    </form>
+                    
                 </div>
-                <div class="col-1 col-sm-2 col-md-3 col-lg-4">3</div>
+
+                <!--Columna posicion izquierda-->
+                <!--Esta columna se utilzara para espacio-->
+                <div class="col-1 col-sm-2 col-md-3 col-lg-4"></div>
             </div>
         </div>
     </div>
