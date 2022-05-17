@@ -7,7 +7,9 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+
+   <!--Title--> 
+    <title>Registro</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -25,33 +27,45 @@
 
                 <!--Columna posicion central, esta columna se utilzara para el formulario-->
                 <div class="rounded border-primary bg-light col-10 col-sm-8 col-md-6 col-lg-4">
-                    <h1 class="title text-primary text-center p-3">Iniciar Sesión</h1>
+                    <h1 class="title text-primary text-center p-3">Registrar Usuario</h1>
                     <form action="get">
-                        <!--Input nombre de usuario-->
+                        <!--Input ingreso de nombres-->
                         <div class="input-group mb-3">
                             <span class="input-group-text " id="basic-addon1">
                                 <ion-icon name="person-circle-outline"></ion-icon>
                             </span>
-                            <input type="text" class="form-control" placeholder="Nombre de Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Ingrese sus nombres" aria-label="Names" aria-describedby="basic-addon1">
                         </div>
-                        <!--Input contraseña-->
+
+                        <!--Input ingreso de apellidos-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Ingrese sus apellidos" aria-label="LastName" aria-describedby="basic-addon1">
+                        </div>
+                        <!--Input ingreso de correo-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Ingrese correo" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
+                        <!--Input ingreso de correo-->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                            </span>
+                            <input type="email" class="form-control" placeholder="Repita el correo" aria-label="Email" aria-describedby="basic-addon1">
+                        </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">
                                 <ion-icon name="key-outline"></ion-icon>
                             </span>
                             <input type="password" class="form-control" placeholder="Contraseña" aria-label="Password" aria-describedby="basic-addon1">
-                        </div>  
-                        <!--Boton de ingresar-->                
+                        </div>                  
                         <div class="input-group mb-3">
-                            <input type="submit" class="form-control" value="Ingresar">
-                        </div>
-                        <!--Enlce de olvido de username-->
-                        <div class="text-center input-group mb-3">
-                            <a  class="" href="">¿Olvidastes tu Usuario?</a>
-                        </div>
-                        <!--Enlace de olvido de password-->
-                        <div class="text-center input-group mb-3">
-                            <a  class="" href="">¿Olvidastes tu contraseña?</a>
+                            <input type="submit" class="form-control" value="Guardar">
                         </div>
                     </form>
                     
